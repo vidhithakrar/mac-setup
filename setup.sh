@@ -23,7 +23,7 @@ function symlink_zsh_config {
 		warn "Skipping symlink as ~/.zshrc already exist"
 	else
 		ln -s $PWD/.zshrc ~/.zshrc
-	fi	
+	fi
 }
 
 function generate_ssh_key {
@@ -34,3 +34,5 @@ install_brew_bundles
 set_zsh_as_default_shell
 symlink_zsh_config
 generate_ssh_key
+
+info "Mac is setup. Please check for any [WARN] and do the needful and do not forget to check the todo list which need to be setup manually for now. Happy Coding!!!"
