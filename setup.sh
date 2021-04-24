@@ -27,7 +27,7 @@ function symlink_zsh_config {
 }
 
 function generate_ssh_key {
-	sh ./ssh_key_generator.sh
+	sh ./ssh-key-generator.sh
 }
 
 install_brew_bundles
