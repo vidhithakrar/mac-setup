@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Exit when any command fails
+set -e
+
 source logger.sh
 
 function install_brew_bundles {
