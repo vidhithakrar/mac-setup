@@ -12,7 +12,11 @@ function install_brew_bundles {
 
 function set_zsh_as_default_shell {
 	info "Setting zsh as default shell"
-	chsh -s /usr/local/bin/zsh
+	BREW_PREFIX=$(brew --prefix)
+	if ! fgrep -q "${BREW_PREFIX}/bin/zsh" /etc/shells; then
+		echo "${BREW_PREFIX}/bin/zsh" | sudo tee -a /etc/shells
+	fi
+	chsh -s "${BREW_PREFIX}/bin/zsh"
 }
 
 
