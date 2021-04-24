@@ -1,4 +1,5 @@
 # Mac Setup
+Automation script to setup a new Mac
 
 ## Usage
 
