@@ -17,3 +17,5 @@ antigen theme robbyrussell
 antigen apply
 
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
