@@ -19,3 +19,7 @@ antigen apply
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
+
+export ANDROID_HOME=$HOME/Library/Android/sdk
+
+export PATH="$ANDROID_HOME/platform-tools:$PATH"
